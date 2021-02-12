@@ -1,5 +1,7 @@
 # Frontend Mentor - Coding Bootcamp Testimonials Slider
 
+[Link to my solution](https://suhodoleca.github.io/coding-bootcamp-testimonials-slider/)
+
 ![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
