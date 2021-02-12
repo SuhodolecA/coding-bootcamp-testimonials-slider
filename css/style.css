@@ -106,6 +106,7 @@ body {
   word-spacing: -.1rem;
   margin-bottom: 4rem;
   letter-spacing: 0.1px;
+  font-weight: 300;
 }
 
 @media (max-width: 39rem) {
