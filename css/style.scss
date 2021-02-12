@@ -34,7 +34,7 @@ body {
 .wrapper {
         background: url('../images/pattern-curve.svg') no-repeat bottom left;
 
-        @media (max-width: 460px) {
+        @media (max-width: 29rem) {
             background-size: 60%;
         }
     }
@@ -44,7 +44,7 @@ body {
     display: flex;
     align-items: center;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 81rem) {
         flex-direction: column-reverse;
     }
 
@@ -53,7 +53,7 @@ body {
         padding-top: 8rem;
         position: relative;
         
-        @media (max-width: 1300px) {
+        @media (max-width: 81rem) {
             padding-top: 0;
         }
 
@@ -61,19 +61,18 @@ body {
             background: url("../images/pattern-quotes.svg") no-repeat 20% 0%;
             padding-top: 7rem;
             min-width: 63rem;
-            width: 100%;
             position: absolute;
             top: -145%;
             left: 4%;
             z-index: 10;
 
-            @media (max-width: 1300px) {
+            @media (max-width: 81rem) {
                 position: static;
                 background-position: 50% 0;
                 text-align: center;
             }
 
-            @media (max-width: 630px) {
+            @media (max-width: 41rem) {
                 min-width: auto;
                 background-size: 20%;
                 background-position-y: 15%;
@@ -81,31 +80,39 @@ body {
 
             &-text {
                 color: $dark-blue;
-                word-spacing: -1px;
+                word-spacing: -.1rem;
                 margin-bottom: 4rem;
                 letter-spacing: 0.1px;
 
-                @media (max-width: 630px) {
+                @media (max-width: 39rem) {
                     font-size: 2.5rem;
                     margin-bottom: 3rem;
                 }
 
-                @media (max-width: 460px) {
+                @media (max-width: 29rem) {
                     font-size: 2rem;
                 }
+            }
+
+            &-text p::before {
+                content: '\201C';
+            }
+
+            &-text p::after {
+                content: '\201D';
             }
 
             &-author {
                 font-size: 2.5rem;
 
-                @media (max-width: 1300px) {
+                @media (max-width: 81rem) {
                     display: flex;
                     flex-direction: column;
                     font-size: 2rem;
                     margin-bottom: 2rem;
                 }
 
-                @media (max-width: 460px) {
+                @media (max-width: 29rem) {
                     font-size: 1.5rem;
                 }
 
@@ -125,7 +132,6 @@ body {
         padding: 6.5rem 0;
         flex-basis: 57%;
         display: flex;
-        align-items: center;
         justify-content: center;
         background: url("../images/pattern-bg.svg") no-repeat 50% 50%;
         background-size: contain;
@@ -137,17 +143,17 @@ body {
 .author-photo {
     box-shadow: 0 2.5rem 1rem rgba(0,0,0, .05);
 
-    @media (max-width: 750px) {
-        max-width: 400px;
+    @media (max-width: 47rem) {
+        max-width: 40rem;
     }
 
     
-    @media (max-width: 630px) {
-        max-width: 300px;
+    @media (max-width: 39rem) {
+        max-width: 30rem;
     }
 
-    @media (max-width: 460px) {
-        max-width: 250px;
+    @media (max-width: 29rem) {
+        max-width: 25rem;
     }
 }
 
@@ -157,12 +163,12 @@ body {
     bottom: 6%;
     left: 20%;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 81rem) {
         left: 50%;
         transform: translateX(-50%);
     }
     
-    @media (max-width: 460px) {
+    @media (max-width: 29rem) {
         bottom: 9%;
     }
 
@@ -176,18 +182,18 @@ body {
         outline: none;
         transition: all .1s linear;
 
-        @media (max-width: 630px) {
+        @media (max-width: 39rem) {
             padding: 1.8rem 0;
         }
 
-        @media (max-width: 460px) {
+        @media (max-width: 29rem) {
             min-width: 4.5rem;
             padding: 1.5rem 0;
         }
     }
 
     &__btn:hover{
-        box-shadow: inset 0px 1px 5px hsla(256, 55%, 42%, .5);
+        box-shadow: inset 0 .1rem .5rem hsla(256, 55%, 42%, .5);
     }
 
     &__btn:hover path {
